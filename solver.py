@@ -20,8 +20,8 @@ def cargar_tablero(nombre_archivo):
     return TCompleto
 
 def encontar_vacia(tablero):
+    contador = 0
     for fila in tablero:
-        contador = 0
         for i in range(9):
             if fila[i] == 0:
                 return [contador, i]
